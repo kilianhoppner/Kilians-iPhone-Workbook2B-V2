@@ -87,7 +87,7 @@
     transform: translate(-50%, -50%);
     background-color: rgb(63, 63, 63);
     padding: 0px;
-    border: 0.18em solid #6cf430;
+    border: 0.19em solid #6cf430;
     opacity:0.96;
     width: 39%; /* Adjust the width of the pop-up */
     height: 53%; /* Adjust the height of the pop-up */
@@ -101,7 +101,7 @@
     top:-0.7%;
     right: 1.47%;
     color: #6cf430;
-    font-size:1.9em;
+    font-size:200%;
     opacity:0.96;
     cursor: url("emojis/pointyfingerbig.png"), auto;
     z-index: 9999;
@@ -112,9 +112,10 @@
   /* Styling for the image */
   .popup img {
     opacity: 0.96; /* Adjust the opacity of the image */
-    max-width: 100%; /* Ensure the image doesn't exceed the width of the pop-up */
-    max-height: 100%; /* Ensure the image doesn't exceed the height of the pop-up */
+    width: 100%; /* Ensure the image doesn't exceed the width of the pop-up */
+    height: 100%; /* Ensure the image doesn't exceed the height of the pop-up */
     position: absolute;
+    object-fit: contain;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

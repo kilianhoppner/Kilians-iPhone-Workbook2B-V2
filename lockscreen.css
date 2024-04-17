@@ -24,11 +24,9 @@ body{
   
   .container div{
       position: absolute;
-      top: 33.85%;
+      top: 34.2%;
       left: 50.04%;
       transform: translate(-50%, -50%);
       color: #d3d1d1;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing:1px;
+      font-size: 185%;
     }

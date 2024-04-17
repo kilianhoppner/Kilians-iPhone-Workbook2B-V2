@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Noteworthy';
+	src: url('fontsv2/Noteworthy.ttf'); 
+	font-style: normal;
+	font-weight: normal;
+}
+
+html{
+	cursor:url("emojis/pointyfinger.png"), auto;
+	}
+
+body{
+	margin: 0px;
+}
+
+
+
+
+

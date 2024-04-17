@@ -1,0 +1,11 @@
+html{
+	cursor:url("emojis/cameranoflash.png"), auto;
+	}
+html:active {
+    cursor:url("emojis/cameraflash.png"), auto;
+    }
+
+body{
+	margin: 0px;
+	overflow: hidden; /* Prevent scroll bars */
+}

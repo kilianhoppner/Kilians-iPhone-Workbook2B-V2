@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Noteworthy';
+	src: url('fontsv2/SFLight.otf'); 
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+html{
+	cursor:url("emojis/pointyfinger.png"), auto;
+	}
+
+body{
+	margin: 0px;
+  overflow: hidden; /* Prevent scroll bars */
+}
+
+
+.time {
+    font-family: "Noteworthy", sans-serif;
+  }
+  
+  
+  .container div{
+      position: absolute;
+      top: 33.85%;
+      left: 50.04%;
+      transform: translate(-50%, -50%);
+      color: #d3d1d1;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing:1px;
+    }

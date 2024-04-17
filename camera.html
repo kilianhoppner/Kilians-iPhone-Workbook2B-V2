@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Camera</title>
+  <link rel="icon" type="text/css" href="favicon/faviconnerd.png">
+  <link rel="stylesheet" href="camera.css">
+
+
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="WebcamCapture.js"></script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <audio id="audioPlayer" preload="auto">
+    <source src="sound/camerashutter.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+<script>
+  // Get the audio player
+  var audioPlayer = document.getElementById('audioPlayer');
+
+  // Add click event listener to the document
+  document.addEventListener('click', function() {
+      // Play the audio
+      audioPlayer.play();
+  });
+</script>
+
+  
+</body>
+</html>

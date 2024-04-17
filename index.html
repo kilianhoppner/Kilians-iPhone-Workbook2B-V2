@@ -1,0 +1,179 @@
+<!-- I used chatGPT to assist with creating my pop up window on the HTML page. I also used it for general assistance, and as an education tool throughout my coding process -->
+<!-- CODE FROM YOUTUBE TUTORIAL BY DECODE to create the time that appears on iPhone. The code has largely been modified from original-->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>unlock</title>
+  <link rel="icon" type="text/css" href="favicon/lockfavicon.png">
+  <link rel="stylesheet" href="./lockscreen.css">
+
+</head>
+
+
+<body style="background-color:rgb(0, 0, 0)";></body>
+
+<body>
+
+
+
+
+  <style>
+
+
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+    
+  
+    .container .iPhone {
+
+    position: absolute;
+    top: 45.5%;
+    left: 49.2%;
+    width:21.3%;
+    height:auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+
+
+}
+
+
+    .container .earthspinning {
+    position: absolute;
+    top: 49.3%;
+    left: 49.95%;
+    width:54.3%;
+    height:auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    }
+
+
+
+        .container .boxearth {
+
+  
+        position: absolute;
+        top: 48.8%;
+        left: 49.9%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        cursor: url("emojis/pointyfingerbig.png"), auto;
+        width:11%;
+        height:20%;
+        border-radius: 50%;
+        border: 0px solid rgb(66, 255, 141);
+        margin: 0;
+        }
+
+
+
+      /* Styling for the pop-up window */
+  .popup {
+    display: none;
+    position: absolute;
+    top: 46.6%;
+    left: 49.89%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(63, 63, 63);
+    padding: 0px;
+    border: 0.18em solid #6cf430;
+    opacity:0.96;
+    width: 39%; /* Adjust the width of the pop-up */
+    height: 53%; /* Adjust the height of the pop-up */
+    cursor: url("emojis/pointyfingerbig.png"), auto;
+    z-index: 9999;
+  }
+
+  /* Styling for the close button */
+.close-btn {
+    position: absolute;
+    top:-0.7%;
+    right: 1.47%;
+    color: #6cf430;
+    font-size:1.9em;
+    opacity:0.96;
+    cursor: url("emojis/pointyfingerbig.png"), auto;
+    z-index: 9999;
+  }
+
+
+
+  /* Styling for the image */
+  .popup img {
+    opacity: 0.96; /* Adjust the opacity of the image */
+    max-width: 100%; /* Ensure the image doesn't exceed the width of the pop-up */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of the pop-up */
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+
+
+</style>
+
+
+<div class="container">
+  <img src="space/space.png"; height="100%"; width="100%">
+  <img src="iphone/iphonescreen2.png"; class="iPhone">
+  <img class="earthspinning" src="iphone/earthspinningslow.gif">
+  <a href="homescreen.html"><div class="boxearth"></div></a>
+  <div class="time"></div>
+
+</div>
+
+<div id="popup" class="popup" draggable="true">
+  <!-- Close button -->
+  <span class="close-btn" onclick="closePopup()">&times;</span>
+  <!-- Image -->
+  <img src="popupwindow/popupwindow.png" alt="Image">
+</div>
+
+
+
+
+<script>
+
+  
+  function openPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+  }
+  
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+  </script>
+
+//Make pop up appear after a few seconds...
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+  }, 1850); // 3000 milliseconds = 3 seconds
+});
+
+</script>
+
+
+
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

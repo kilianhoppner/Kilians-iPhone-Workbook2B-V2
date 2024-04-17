@@ -87,9 +87,9 @@
 /* Media query for larger screens */
 @media screen and (min-width: 2000px) {
   .container .time {
-    top: 34%;
+    top: 33.8%;
     left: 50.04%;
-    font-size: 280%;
+    font-size: 285%;
   }
 }
 
@@ -103,10 +103,10 @@
     transform: translate(-50%, -50%);
     background-color: rgb(63, 63, 63);
     padding: 0px;
-    border: 0.3em solid #6cf430;
+    border: 0.35em solid #6cf430;
     opacity:0.96;
-    width: 39%; /* Adjust the width of the pop-up */
-    height: 53%; /* Adjust the height of the pop-up */
+    width: 45vw; /* Adjust the width of the pop-up relative to the viewport width */
+    height: calc(45vw * 0.75); /* Maintain a 4:3 aspect ratio (adjust the multiplier accordingly) */
     cursor: url("emojis/pointyfingerbig.png"), auto;
     z-index: 9999;
   }
